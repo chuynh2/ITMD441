@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #a48bfe;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+  h2{
+    color: white;
+    font-size: 30px;
+  }
+  
+  p {
+    float: left;
+    font-size: 20px;
+  }
+  li{
+    font-size: 20px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  .row {
+    content: "";
+    clear: both;
+    display: table;
+  }
