@@ -1,7 +1,11 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	margin: auto;
 }
 
 /* end Flexbox Part 1 */
@@ -10,23 +14,31 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	margin: auto;
+	padding: 0%;
+	
 }
 
 #flex-section2 li {
-
+	list-style-type: none;
 }
 
 #flex-section2 .item1 {
-
+	order: 1;
+	flex: 33%;
 }
 
 #flex-section2 .item2 {
-
+	order: 3;
+	flex: 33%;
 }
 
 #flex-section2 .item3 {
-
+	order: 2;
+	flex: 33%;
 }
 
 /* end Flexbox Part 2 */
@@ -35,11 +47,19 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 #flex-section3 .tags ul {
-
+	list-style-type: none;
+	display: flex;
+	padding: 0%;
+	margin: 0%;
+	flex-wrap: wrap;	
 }
 
 /* end Flexbox Part 3 */
