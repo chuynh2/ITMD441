@@ -9,6 +9,33 @@
     <script type="text/javascript" src="js/javaScript.js"></script>
     </head>
     <body>
-
+        <div id="main-container">
+            <h3>ITMD 441 - Lab 3 - Christine Huynh</h3>
+            <h1>Tip Calculator</h1>
+            <form id="form-container">
+                <fieldset>
+                    <div class="field">
+                      <label class="sub-heading">Bill Total:</label>
+                      <input type="text" class="form-control" id = "billTotal" required>
+                    </div>
+                    <div class="field">
+                        <label class="sub-heading">Tip:</label>
+                        <input type="range" min="0" max="100" value="20" id="tip"  required>
+                    </div>
+                    <div class="field">
+                      <label class="sub-heading">Tip Percentage:</label>
+                      <input type="text" class="form-control" id="tipPercentage" disabled>
+                    </div>
+                    <div class="field">
+                      <label class="sub-heading">Tip Amount:</label>
+                      <input type="text" class="form-control" id="tipAmount" disabled>
+                    </div>
+                    <div class="field">
+                      <label class="sub-heading">Total Bill with Tip:</label>
+                      <input type="text" class="form-control" id="totalBillWithTip" disabled>
+                    </div>
+                  </fieldset>
+            </form>
+        </div>
     </body>
 </html>
