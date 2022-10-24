@@ -2,9 +2,9 @@ body {
     background-color: #b0d1b0;
     font-family: 'Spartan', sans-serif;
 }
-input{
-    
-}
+input[type="text"]:disabled {
+    background: lightgray;
+  }
 #main-container{
     background-color: #ceebce;
     width: 70%;
