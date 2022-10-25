@@ -4,23 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ITMD-441 Lab 3</title>
-        <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="js/javaScript.js"></script>
+        <link rel="stylesheet" href="css/normalize.css" >
+        <link rel="stylesheet" href="css/styles.css" >
     </head>
     <body>
         <div id="main-container">
-            <h3>ITMD 441 - Lab 3 - Christine Huynh</h3>
-            <h1>Tip Calculator</h1>
             <form id="form-container">
+                <h3>ITMD 441 - Lab 3 - Christine Huynh</h3>
+                <h1>Tip Calculator</h1>
                 <fieldset>
                     <div class="field">
                       <label class="sub-heading">Bill Total:</label>
-                      <input type="text" class="form-control" id = "billTotal" required>
+                      <input type="text" class="form-control" id = "billTotal" onkeyup="tipCalculator()" required>
                     </div>
                     <div class="field">
                         <label class="sub-heading">Tip:</label>
-                        <input type="range" min="0" max="100" value="20" id="tip"  required>
+                        <input type="range" class="form-control" min="0" max="100" value="20" id="tip" onkeyup="tipCalculator()" required>
                     </div>
                     <div class="field">
                       <label class="sub-heading">Tip Percentage:</label>
@@ -37,5 +36,6 @@
                   </fieldset>
             </form>
         </div>
+        <script type="text/javascript" src="js/javaScript.js"></script>
     </body>
 </html>
