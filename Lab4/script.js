@@ -14,7 +14,7 @@ let getCurrentLocation = () => {
          }})
          .then( json => {
           
-           displayWeather(json);
+           displayTodayWeather(json);
            displayWeatherForecast(json);
          })
       };
@@ -59,3 +59,25 @@ function searchWeather(){
         })
     }
 }
+
+//Display Today Forecast 
+function displayTodayWeather(arg){
+    let region = document.getElementById("region");
+    let day = document.getElementById("day");
+    let temp = document.getElementById("temp");
+    let precip = document.getElementById("recip");
+    let comment = document.getElementById("comment");
+    let humidity = document.getElementById("humidity");
+    let wind = document.getElementById("wind");
+    let icon = document.getElementById("icon");
+
+    region.innerHTML = arg.region;
+    day.innerHTML = arg.currentConditions.dayhour;
+    temp.innerHTML = (arg.currentConditions.temp.f + "°F");
+    precip.innerHTML = ("Percipitation: " + arg.currentConditions.precip);
+    comment.innerHTML = arg.currentConditions.comment;
+    humidity.innerHTML = ("Humidity: " + arg.currentConditions.humidity);
+    wind.innerHTML = ("Wind: " + arg.currentConditions.wind.mile + " mph");
+    icon.innerHTML = `<img src="${arg.currentConditions.iconURL}"/>`
+}
+
