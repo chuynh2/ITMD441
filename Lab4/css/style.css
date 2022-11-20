@@ -1,0 +1,42 @@
+body{
+    background-color: #102863;
+    font-family: 'Spartan', sans-serif;
+    margin: 0px;
+    height: 0px;
+}
+h1{
+    color: #cbd7f5;
+    text-align: center;
+}
+#main-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form{
+    grid-area: form;
+    padding: 25px;
+    background-color: #7283ad;
+    margin: 30px;
+
+}
+.container-today-forecast{
+    display: flex;
+    color: #cbd7f5;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 25px;
+}
+.today-flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.today-date{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}

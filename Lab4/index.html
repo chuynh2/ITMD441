@@ -6,17 +6,17 @@
         <title>ITMD 441 Lab 4</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="css/normalize.css" >
-        <link rel="stylesheet" href="css/styles.css" >
+        <link rel="stylesheet" href="css/style.css" >
 
     </head>
     <body>
         <h1>Weather Forecast</h1>
-        <div class ="main-containter">
+        <div id ="main-containter">
             <div class ="container-form">
                 <form id="search-form">
                     <input id="search-input" type="text" placeholder="Enter Location">
-                    <button id="search-button" type="sumbit" onClick="searchWeather()" value="Sumbit"></button>
-                    <button id="geolocation-button" type="sumbit" onclick="getCurrentLocation()" value="GeoLocation"></button>
+                    <button id="search-button" type="sumbit" onClick="searchWeather()" value="Sumbit">Sumbit</button>
+                    <button id="geolocation-button" type="sumbit" onclick="getCurrentLocation()" value="GeoLocation">GeoLocation</button>
                 </form>
             </div>
             <div class="container-today-forecast">
