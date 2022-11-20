@@ -2,10 +2,49 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>ITMD 441 introduction</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ITMD 441 Lab 4</title>
         <link rel = "stylesheet" href = "style.css">
+        <link rel="stylesheet" href="css/normalize.css" >
+        <link rel="stylesheet" href="css/styles.css" >
+
     </head>
     <body>
-
+        <h1>Weather Forecast</h1>
+        <div class ="main-containter">
+            <div class ="container-form">
+                <form id="search-form">
+                    <input id="search-input" type="text" placeholder="Enter Location">
+                    <button id="search-button" type="sumbit" onClick="searchWeather()" value="Sumbit"></button>
+                    <button id="geolocation-button" type="sumbit" onclick="getCurrentLocation()" value="GeoLocation"></button>
+                </form>
+            </div>
+            <div class="container-today-forecast">
+                <h2>Today's Forecast</h2>
+                <div id ="today-grid" class="today-grid">
+                    <div class="today-date">
+                        <p id="region"></p>
+                        <p id="day"></p>
+                    </div>
+                    <div class="today-temp">
+                        <p id="temp"></p>
+                        <p id="comment"></p>
+                    </div>
+                    <div class="today-icon">
+                        <p id="icon"></p>
+                    </div>
+                    <div class="today-description">
+                        <p id="precip"></p>
+                        <p id="humidity"></p>
+                        <p id="wind"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-forecast">
+                <h2 id="forecast-header">7 Days Forecast</h2>
+                <div id="forecast-grid"></div>
+            </div>
+        </div>
+        <script>src="script.js"</script>
     </body>
 </html>
