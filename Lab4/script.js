@@ -28,7 +28,7 @@ let getCurrentLocation = () => {
 
 //Get weather API went search button is clicked
 function searchWeather(){
-    let forecast = document.getElementById("forecast-grid");
+    let forecast = document.getElementById("forecast-flexbox");
     let inputLocation = document.getElementById("search-input").value;
     let todayForecast = document.getElementById("container-today-forecast");
 
@@ -97,15 +97,15 @@ function displayTodayWeather(arg){
 //Display 7 Days forecast
 function displayDaysForecast(arg){
     console.log("12");
-    let forecastGrid = document.getElementById("forecast-grid");
+    let forecastFlexbox = document.getElementById("forecast-flexbox");
     console.log(arg.next_days.length);
     for(i = 1, x = (arg.next_days.length - 1); i < x; i++){
         console.log("11");
         var day = arg.next_days[i];
 
-        forecastGrid.innerHTML +=`
+        forecastFlexbox.innerHTML +=`
         <div id ="day">
-            <p>${day.day}</p>
+            <strong>${day.day}</>
             <p>${day.comment}</p>
             <p>${day.max_temp.f + "°F"} </p>
             <p>${day.min_temp.f + "°F"} </p>
