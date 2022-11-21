@@ -4,10 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ITMD 441 Lab 4</title>
-        <link rel = "stylesheet" href = "style.css">
         <link rel="stylesheet" href="css/normalize.css" >
-        <link rel="stylesheet" href="css/style.css" >
-
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <h1>Weather Forecast</h1>
@@ -15,16 +13,16 @@
             <div class ="container-form">
                 <form id="search-form">
                     <input id="search-input" type="text" placeholder="Enter Location">
-                    <button id="search-button" type="sumbit" onClick="searchWeather()" value="Sumbit">Sumbit</button>
-                    <button id="geolocation-button" type="sumbit" onclick="getCurrentLocation()" value="GeoLocation">GeoLocation</button>
+                    <button id="search-button" type="submit" onClick="searchWeather()" value="Submit">Submit</button>
+                    <button id="geolocation-button" type="submit" onclick="getCurrentLocation()" value="GeoLocation">GeoLocation</button>
                 </form>
             </div>
             <div class="container-today-forecast">
                 <h2>Today's Forecast</h2>
-                <div id ="today-grid" class="today-grid">
+                <div id ="today-flexbox" class="today-flexbox">
                     <div class="today-date">
-                        <p id="region"></p>
-                        <p id="day"></p>
+                        <div id="region"></div>
+                        <div id="day"></div>
                     </div>
                     <div class="today-temp">
                         <p id="temp"></p>
@@ -45,6 +43,6 @@
                 <div id="forecast-grid"></div>
             </div>
         </div>
-        <script>src="script.js"</script>
+        <script src="script.js"></script>
     </body>
 </html>
