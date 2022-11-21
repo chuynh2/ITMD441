@@ -20,6 +20,9 @@ h1{
     background-color: #7283ad;
     margin: 30px;
 }
+.today-header{
+    width:100%;
+}
 .container-today-forecast{
     display: flex;
     color: #cbd7f5;
@@ -32,15 +35,26 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
 }
 .today-date{
     display: flex;
     flex-direction: row;
     margin: 20px;
 }
+.today-temp{
+
+}
+.today-icon{
+
+}
+.today-description{
+
+}
 .container-forecast{
     color: #cbd7f5;
+    background-color: #7283ad;
     margin: 30px;
     padding: 25px;
     position: relative;
@@ -50,7 +64,9 @@ h1{
 }
 #forecast-grid{
     display: grid;
-    padding: 15px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
     grid-template-columns: auto auto auto auto auto auto auto;
     grid-row: 100%;
 }
