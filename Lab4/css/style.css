@@ -8,6 +8,10 @@ h1{
     color: #cbd7f5;
     text-align: center;
 }
+icon{
+    height: 100px;
+    width: 100px;
+}
 #main-container{
     display:flex;
     align-items: center;
@@ -22,35 +26,43 @@ h1{
 }
 .today-header{
     width:100%;
+    color: #cbd7f5;
+    font-size: medium;
+    margin: 30px;
+
 }
 .container-today-forecast{
-    display: flex;
     color: #cbd7f5;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-    padding: 25px;
+    display: flex;
 }
 .today-flexbox{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 30px;
     width: 100%;
 }
-.today-date{
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+.today-icon{
+    flex-grow: 1;
+    align-self: center;
 }
 .today-temp{
-
+    font-size: 40px;
+    margin: 10px;
+    flex-grow: 1;
+    align-self: center;
 }
-.today-icon{
-
+.today-date{
+    margin: 10px;
+    flex-grow: 3;
+    align-items: right;
 }
 .today-description{
-
+    margin: 10px;
+    align-self:flex-end;
+    flex-grow: 4;
+    align-self: center;
 }
 .container-forecast{
     color: #cbd7f5;
@@ -62,11 +74,12 @@ h1{
 #forecast-header{
     position: relative;
 }
-#forecast-grid{
-    display: grid;
+#forecast-flexbox{
+    display: flex;
     align-items: center;
     padding: 10px;
-    margin: 10px;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-row: 100%;
+    margin: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
